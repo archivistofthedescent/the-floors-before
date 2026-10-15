@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.summary | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav>
+      <a href="{{ '/characters/' | relative_url }}">Characters</a>
+      <a href="{{ '/contribute/' | relative_url }}">Contribute</a>
+    </nav>
+  </header>
+  <main>{{ content }}</main>
+  <footer class="site">
+    Unofficial, non-commercial fan work. Dungeon Crawler Carl and its characters belong to Matt Dinniman.
+    Stories and art here are the work of their credited authors. Curated by {{ site.editor }}.
+  </footer>
+</body>
+</html>

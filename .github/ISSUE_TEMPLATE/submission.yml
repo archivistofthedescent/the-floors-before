@@ -1,0 +1,35 @@
+name: Submit a chapter or art
+description: Send in a backstory chapter or a piece of art without using git.
+title: "[Submission] "
+labels: [submission]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you submitting?
+      options: [Chapter, Art, Both]
+    validations: { required: true }
+  - type: input
+    id: character
+    attributes:
+      label: Character
+    validations: { required: true }
+  - type: input
+    id: credit
+    attributes:
+      label: How should we credit you?
+    validations: { required: true }
+  - type: textarea
+    id: content
+    attributes:
+      label: Chapter text, or art (drag the image in here)
+    validations: { required: true }
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: House rules
+      options:
+        - label: This is my own original work and doesn't copy text from the books.
+          required: true
+        - label: If any of it is AI-generated, I've said so above.
+          required: true

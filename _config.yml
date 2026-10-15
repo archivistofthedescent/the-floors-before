@@ -1,0 +1,16 @@
+title: The Floors Before
+description: A fan-made anthology of backstories for the characters of Dungeon Crawler Carl.
+editor: Archivist of the Descent
+# Set baseurl to "/<repo-name>" once the GitHub repo exists (e.g. "/the-floors-before").
+baseurl: ""
+url: ""
+collections:
+  chapters:
+    output: true
+    permalink: /chapters/:name/
+defaults:
+  - scope: { path: "", type: chapters }
+    values: { layout: chapter }
+  - scope: { path: "" }
+    values: { layout: default }
+exclude: [README.md, CONTRIBUTING.md, Gemfile, Gemfile.lock]

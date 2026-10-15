@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article class="chapter">
+  <p class="kicker">Backstory · {{ page.character }}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="byline">by {{ page.author }}{% if page.artist %} · art by {{ page.artist }}{% endif %}</p>
+  {% if page.art %}<figure><img src="{{ page.art | relative_url }}" alt="{{ page.art_alt }}">{% if page.art_credit %}<figcaption>{{ page.art_credit }}</figcaption>{% endif %}</figure>{% endif %}
+  {{ content }}
+</article>
