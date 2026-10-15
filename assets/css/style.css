@@ -12,3 +12,4 @@ a{color:var(--accent)}h1,h2{line-height:1.2}
 figure{margin:24px 0}img{max-width:100%;height:auto;display:block}figcaption{color:var(--muted);font-size:13px;font-family:system-ui,sans-serif}
 table{border-collapse:collapse;width:100%;font-size:15px;font-family:system-ui,sans-serif}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 footer.site{color:var(--muted);font-size:13px;font-family:system-ui,sans-serif;border-top:1px solid var(--line);margin-top:48px}
+.hero{margin:8px auto 24px;max-width:420px}.hero img{border-radius:6px;box-shadow:0 6px 24px rgba(0,0,0,.35)}

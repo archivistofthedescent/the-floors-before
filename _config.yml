@@ -15,7 +15,7 @@ collections:
     permalink: /chapters/:name/
 defaults:
   - scope: { path: "", type: chapters }
-    values: { layout: chapter }
+    values: { layout: chapter, image: /assets/art/season-one-cover.jpg }
   - scope: { path: "" }
-    values: { layout: default }
+    values: { layout: default, image: /assets/art/season-one-cover.jpg }
 exclude: [queue, scripts, STYLE.md, README.md, CONTRIBUTING.md, Gemfile, Gemfile.lock]
