@@ -21,8 +21,8 @@ The System AI is the frame narrator ("the Archive"). It interrupts with block qu
 - Each part opens with an `ARCHIVE` header and closes with an `End of Part N` aside.
 
 ## Shape
-- **3 parts per character, about 2,000 to 2,500 words each** (roughly 6,000 to 7,500 per character).
-- Part 1: the ordinary life before, and the collapse or arrival. Part 2: the long middle, the routine and the first real loss. Part 3: the turn that made them who they are in canon.
+- **Parts of about 2,000 to 2,500 words each.** The big three (Carl, Princess Donut, Mordecai) get 4 parts (about 9,000 words); everyone else gets 3 parts (about 6,500 words).
+- Part 1: the ordinary life before, and the collapse or arrival. Part 2: the long middle, the routine and the first real loss. Part 3: the turn that made them who they are in canon. For 4-part characters, Part 4 carries the backstory right up to the edge of canon and pays off the recurring object.
 - Give each backstory one concrete recurring object or phrase that pays off at the end (for Mordecai: "heat is a promise", the weak-tea colour, the tin cup).
 - End with an italic author's note listing which details are invented.
 
