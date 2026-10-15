@@ -29,7 +29,7 @@ The System AI is the frame narrator ("the Archive"). It interrupts with block qu
 ## Art
 - Every character has one piece of cover art, shown at the top of all their parts.
 - Style: match `assets/art/season-one-cover.jpg`. It should be cinematic, gritty, fire-lit and painterly-photoreal, like a TV season poster, with the character as the hero of the frame.
-- Format: landscape 1600x900, JPEG under 500KB, saved as `assets/art/<character-slug>.jpg` (for example `mordecai.jpg`, `princess-donut.jpg`). The chapter pages pick it up automatically.
+- Format: landscape 1600x900 or square 1024x1024, JPEG under 500KB, saved as `assets/art/<character-slug>.jpg` (for example `mordecai.jpg`, `princess-donut.jpg`). The chapter pages pick it up automatically.
 - Never use the official book logo or cover art. It must be labelled as AI-generated fan art (the site does this automatically).
 - How to generate images on the Pi is described in `scripts/pi/ART.md`.
 
