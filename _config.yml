@@ -1,9 +1,14 @@
 title: The Floors Before
 description: A fan-made anthology of backstories for the characters of Dungeon Crawler Carl.
 editor: Archivist of the Descent
-# Set baseurl to "/<repo-name>" once the GitHub repo exists (e.g. "/the-floors-before").
-baseurl: ""
-url: ""
+baseurl: "/the-floors-before"
+url: "https://archivistofthedescent.github.io"
+lang: en
+author: Archivist of the Descent
+plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-feed]
+feed:
+  collections: [chapters]
+keywords: [Dungeon Crawler Carl, DCC, fan fiction, fanfic, backstory, character study, LitRPG, Matt Dinniman]
 collections:
   chapters:
     output: true
