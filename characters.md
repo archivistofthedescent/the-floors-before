@@ -11,9 +11,9 @@ Pick an open character and claim it through the submission form. Backstory angle
 | Character | Backstory angle | Status |
 |---|---|---|
 | Mordecai | His first crawl, and the moment he took the guide job instead of dying. | Published |
-| Carl | One ordinary week before the collapse that quietly explains who he becomes. | In progress |
-| Princess Donut | Her show-cat career as she remembers it, which is not how it happened. | Open |
-| Katia Grim | Her life before, and why becoming someone else appeals to her. | Open |
+| Carl | One ordinary week before the collapse that quietly explains who he becomes. | Published |
+| Princess Donut | Her show-cat career as she remembers it, which is not how it happened. | Published |
+| Katia Grim | Her life before, and why becoming someone else appeals to her. | Published |
 
 ## Tier 2: major recurring
 
