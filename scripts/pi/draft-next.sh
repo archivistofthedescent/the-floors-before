@@ -18,7 +18,7 @@ branch="draft/$(date +%Y-%m-%d)"
 git checkout --quiet -B "$branch"
 
 summary=$(claude -p "$(cat scripts/pi/draft-prompt.md)" \
-  --allowedTools "Read,Write,Edit,Glob,Grep" \
+  --allowedTools "Read,Write,Edit,Glob,Grep,Bash" \
   --permission-mode acceptEdits)
 
 if [ -z "$(git status --porcelain)" ]; then
@@ -27,7 +27,7 @@ if [ -z "$(git status --porcelain)" ]; then
   exit 0
 fi
 
-git add queue characters.md
+git add queue characters.md assets/art
 git commit --quiet -m "Draft: $summary"
 git push --quiet --force -u origin "$branch"
 gh pr create --base main --head "$branch" --title "Draft for review: $(date +%Y-%m-%d)" \

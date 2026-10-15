@@ -26,6 +26,13 @@ The System AI is the frame narrator ("the Archive"). It interrupts with block qu
 - Give each backstory one concrete recurring object or phrase that pays off at the end (for Mordecai: "heat is a promise", the weak-tea colour, the tin cup).
 - End with an italic author's note listing which details are invented.
 
+## Art
+- Every character has one piece of cover art, shown at the top of all their parts.
+- Style: match `assets/art/season-one-cover.jpg`. It should be cinematic, gritty, fire-lit and painterly-photoreal, like a TV season poster, with the character as the hero of the frame.
+- Format: landscape 1600x900, JPEG under 500KB, saved as `assets/art/<character-slug>.jpg` (for example `mordecai.jpg`, `princess-donut.jpg`). The chapter pages pick it up automatically.
+- Never use the official book logo or cover art. It must be labelled as AI-generated fan art (the site does this automatically).
+- How to generate images on the Pi is described in `scripts/pi/ART.md`.
+
 ## Files
 - File name: `NNN-character-P.md` (for example `002-zev-1.md`), where NNN is the character's release number and P is the part.
 - Front matter: `title`, `character`, `author: Archivist of the Descent`, `order` (for example 2.1), `description` (one line that starts with "Dungeon Crawler Carl fan fiction."), and `tags`.

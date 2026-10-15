@@ -5,6 +5,11 @@ layout: default
   <p class="kicker">Backstory · {{ page.character }}</p>
   <h1>{{ page.title }}</h1>
   <p class="byline">by {{ page.author }}{% if page.artist %} · art by {{ page.artist }}{% endif %}</p>
-  {% if page.art %}<figure><img src="{{ page.art | relative_url }}" alt="{{ page.art_alt }}">{% if page.art_credit %}<figcaption>{{ page.art_credit }}</figcaption>{% endif %}</figure>{% endif %}
+  {% assign char_slug = page.character | slugify %}
+  {% assign char_art_path = '/assets/art/' | append: char_slug | append: '.jpg' %}
+  {% assign char_art = site.static_files | where: "path", char_art_path | first %}
+  {% assign art = page.art | default: nil %}
+  {% if art == nil and char_art %}{% assign art = char_art_path %}{% endif %}
+  {% if art %}<figure class="char-art"><img src="{{ art | relative_url }}" alt="{{ page.art_alt | default: page.character | append: ', fan art' }}"><figcaption>{{ page.art_credit | default: 'AI-generated fan art. Not official artwork.' }}</figcaption></figure>{% endif %}
   {{ content }}
 </article>
