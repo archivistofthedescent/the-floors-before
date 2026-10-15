@@ -16,6 +16,8 @@
       <a href="{{ '/contribute/' | relative_url }}">Contribute</a>
     </nav>
   </header>
+  {% assign header_art = site.static_files | where: "path", "/assets/art/header.jpg" | first %}
+  {% if header_art %}<a href="{{ '/' | relative_url }}"><img class="site-banner" src="{{ '/assets/art/header.jpg' | relative_url }}" alt="The Floors Before: a stairwell spiralling down into the dungeon"></a>{% endif %}
   <main>{{ content }}</main>
   <footer class="site">
     Unofficial, non-commercial fan work. Dungeon Crawler Carl and its characters belong to Matt Dinniman.
