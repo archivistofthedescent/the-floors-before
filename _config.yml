@@ -13,4 +13,4 @@ defaults:
     values: { layout: chapter }
   - scope: { path: "" }
     values: { layout: default }
-exclude: [README.md, CONTRIBUTING.md, Gemfile, Gemfile.lock]
+exclude: [queue, scripts, README.md, CONTRIBUTING.md, Gemfile, Gemfile.lock]
