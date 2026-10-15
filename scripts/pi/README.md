@@ -33,3 +33,18 @@ The Pi publishes one queued chapter a day. Everything lives on the external HDD,
    ```
    0 9 * * * /mnt/hdd/the-floors-before/scripts/pi/release-next.sh >> /mnt/hdd/floors-release.log 2>&1
    ```
+
+## Optional: Claude writes the next part every night
+
+`draft-next.sh` runs Claude Code on the Pi. Claude writes the next part following `STYLE.md` and opens a pull request. You read it on your phone and merge it if you like it. The next morning, `release-next.sh` publishes it.
+
+Setup:
+1. Check the Pi is 64-bit: `uname -m` must print `aarch64`.
+2. Install Claude Code (see the official install instructions at docs.claude.com), then run `claude` once and sign in.
+3. Install the GitHub CLI (`sudo apt install gh`) and run `gh auth login` as the `archivistofthedescent` account.
+4. Test once by hand: `/mnt/hdd/the-floors-before/scripts/pi/draft-next.sh`
+5. Add a nightly run with `crontab -e`, at 2am:
+   ```
+   0 2 * * * /mnt/hdd/the-floors-before/scripts/pi/draft-next.sh >> /mnt/hdd/floors-draft.log 2>&1
+   ```
+   Cron has a minimal PATH. If `claude` or `gh` isn't found, add a `PATH=...` line at the top of the crontab using the output of `echo $PATH`.
